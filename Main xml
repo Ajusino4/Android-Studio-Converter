@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyExchange">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:text="Convert Currency"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstOption"
+        android:layout_width="201dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/textinputborder"
+        android:ems="10"
+        android:hint="0"
+        android:imeOptions="actionDone"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="121dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="143dp"
+        android:text="converts to" />
+
+    <TextView
+        android:id="@+id/secondOption"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/firstOption"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="196dp"
+        android:ems = "10"
+        android:hint="0" />
+
+    <Button
+        android:id="@+id/convertbutton"
+        android:layout_width="173dp"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/firstOption"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-54dp"
+        android:layout_marginBottom="201dp"
+        android:gravity="center"
+        android:text="CONVERT" />
+
+    <Button
+        android:id="@+id/changebutton"
+        android:layout_width="176dp"
+        android:layout_height="62dp"
+        android:layout_alignEnd="@+id/title"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="112dp"
+        android:gravity="center"
+        android:text="CHANGE CURRENCY" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/firstOption"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/secondOption"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="-33dp"
+        android:layout_toEndOf="@+id/title"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/meName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="-37dp"
+        android:layout_marginBottom="3dp"
+        android:text="Antonio Jusino" />
+
+
+</RelativeLayout>
